@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f2f5;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -25,6 +26,7 @@ header {
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 header h1 {
@@ -62,6 +64,7 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -70,6 +73,7 @@ nav ul li a:hover {
 
 main {
     padding: 40px 0;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 section {
@@ -78,18 +82,28 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
     color: #1f2937;
     font-size: 2em;
     margin-bottom: 20px;
+    border-left: 5px solid #1f2937;
+    padding-left: 10px;
+    animation: fadeInLeft 1.5s ease-in-out;
 }
 
 p {
     line-height: 1.8;
     color: #4b5563;
     font-size: 1.1em;
+    margin: 20px 0;
 }
 
 footer {
@@ -99,9 +113,25 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 footer p {
     margin: 0;
     font-size: 1em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
 }
