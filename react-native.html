@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Native - Framework Mobile</title>
+    <meta name="description" content="Descrição detalhada sobre o framework React Native para desenvolvimento mobile.">
+    <meta name="keywords" content="React Native, Desenvolvimento Mobile, JavaScript">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>React Native</h1>
+            <h2>Framework para Desenvolvimento de Aplicativos Móveis</h2>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><img src="favicon.svg" alt="Logo" class="nav-logo"></a></li>
+                <li><a href="react.html">React</a></li>
+                <li><a href="react-native.html">React Native</a></li>
+                <li><button id="toggleTheme">Dark Mode</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="react-native-details">
+                <h3>O que é React Native?</h3>
+                <p>React Native é um framework que permite o desenvolvimento de aplicativos móveis utilizando as mesmas abstrações de UI do React. Criado pela equipe do Facebook, ele permite que desenvolvedores utilizem JavaScript para criar aplicativos nativos para Android e iOS.</p>
+
+                <h3>Principais Características</h3>
+                <ul>
+                    <li><strong>Componentes Nativos:</strong> Acesso a APIs nativas para criar interfaces de usuário específicas para cada plataforma.</li>
+                    <li><strong>Cross-Platform:</strong> Permite o desenvolvimento para múltiplas plataformas com um único código base.</li>
+                    <li><strong>Desempenho:</strong> Aplicativos são executados diretamente no código nativo, garantindo alta performance.</li>
+                </ul>
+
+                <h3>Exemplo de Código em React Native</h3>
+                <pre><code class="language-js">
+import React from 'react';
+import { Text, View } from 'react-native';
+
+function App() {
+    return (
+        <View>
+            <Text>Hello, React Native!</Text>
+        </View>
+    );
+}
+                </code></pre>
+            </section>
+
+            <button id="scrollTopBtn">↑ Topo</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Trabalho de Web 2 - ADS 5° Período</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
