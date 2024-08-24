@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://www.seusite.com/index.html</loc>
+        <lastmod>2024-08-24</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://www.seusite.com/react.html</loc>
+        <lastmod>2024-08-24</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.seusite.com/react-native.html</loc>
+        <lastmod>2024-08-24</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.seusite.com/sobre.html</loc>
+        <lastmod>2024-08-24</lastmod>
+        <priority>0.64</priority>
+    </url>
+</urlset>
