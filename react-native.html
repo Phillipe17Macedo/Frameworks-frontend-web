@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <h1>React Native</h1>
             <h2>Framework para Desenvolvimento de Aplicativos Móveis</h2>
         </div>
@@ -21,29 +22,29 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html"><img src="favicon.svg" alt="Logo" class="nav-logo"></a></li>
-                <li><a href="react.html">React</a></li>
-                <li><a href="react-native.html">React Native</a></li>
-                <li><button id="toggleTheme">Dark Mode</button></li>
+                <li><a href="index.html"><img src="favicon.svg" alt="Logo" class="nav-logo" data-aos="fade-down"></a></li>
+                <li><a href="react.html" data-aos="fade-down">React</a></li>
+                <li><a href="react-native.html" data-aos="fade-down">React Native</a></li>
+                <li><button id="toggleTheme" data-aos="fade-down">Dark Mode</button></li>
             </ul>
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <section id="react-native-details">
+            <section id="react-native-details" data-aos="fade-left">
                 <h3>O que é React Native?</h3>
                 <p>React Native é um framework que permite o desenvolvimento de aplicativos móveis utilizando as mesmas abstrações de UI do React. Criado pela equipe do Facebook, ele permite que desenvolvedores utilizem JavaScript para criar aplicativos nativos para Android e iOS.</p>
 
                 <h3>Principais Características</h3>
-                <ul>
+                <ul data-aos="fade-right">
                     <li><strong>Componentes Nativos:</strong> Acesso a APIs nativas para criar interfaces de usuário específicas para cada plataforma.</li>
                     <li><strong>Cross-Platform:</strong> Permite o desenvolvimento para múltiplas plataformas com um único código base.</li>
                     <li><strong>Desempenho:</strong> Aplicativos são executados diretamente no código nativo, garantindo alta performance.</li>
                 </ul>
 
                 <h3>Exemplo de Código em React Native</h3>
-                <pre><code class="language-js">
+                <pre><code class="language-js" data-aos="fade-up">
 import React from 'react';
 import { Text, View } from 'react-native';
 
@@ -62,11 +63,18 @@ function App() {
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <p>Trabalho de Web 2 - ADS 5° Período</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
