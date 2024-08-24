@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frameworks Web - React e React Native</title>
+    <meta name="description" content="Comparação detalhada entre os frameworks React e React Native para desenvolvimento web e mobile.">
+    <meta name="keywords" content="React, React Native, Desenvolvimento Web, Desenvolvimento Mobile">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,13 +21,9 @@
     <nav>
         <div class="container">
             <ul>
-                <li>
-                    <a href="#home">
-                        <img src="favicon.svg" alt="Logo" class="nav-logo">
-                    </a>
-                </li>
-                <li><a href="#react">React</a></li>
-                <li><a href="#react-native">React Native</a></li>
+                <li><a href="index.html"><img src="favicon.svg" alt="Logo" class="nav-logo"></a></li>
+                <li><a href="react.html">React</a></li>
+                <li><a href="react-native.html">React Native</a></li>
                 <li><button id="toggleTheme">Dark Mode</button></li>
             </ul>
         </div>
@@ -36,49 +34,6 @@
             <section id="intro">
                 <h3>Introdução</h3>
                 <p>Bem-vindo à nossa página sobre os frameworks de frontend React e React Native. Explore abaixo para saber mais sobre cada um deles e como eles podem transformar a maneira como você desenvolve aplicativos web e móveis.</p>
-            </section>
-
-            <section id="react">
-                <h3>React</h3>
-                <p>
-                    React é uma biblioteca JavaScript de código aberto, mantida pelo Facebook, para a construção de interfaces de usuário, especialmente para aplicações de página única. Seu objetivo principal é tornar a construção de componentes de UI mais modular e reutilizável.
-                </p>
-                <p>
-                    Um dos principais conceitos do React é o "virtual DOM", que permite atualizações eficientes da interface de usuário. Com o React, você pode construir aplicativos dinâmicos, onde partes da página podem ser atualizadas de forma independente, sem recarregar a página inteira.
-                </p>
-                <h4>Exemplo de Código:</h4>
-                <pre><code>
-function App() {
-    return (
-        <div>
-            <h1>Hello, React!</h1>
-        </div>
-    );
-}
-                </code></pre>
-            </section>
-
-            <section id="react-native">
-                <h3>React Native</h3>
-                <p>
-                    React Native é um framework que permite o desenvolvimento de aplicativos móveis utilizando as mesmas abstrações de UI do React. Criado pela equipe do Facebook, ele permite que desenvolvedores utilizem JavaScript para criar aplicativos nativos para Android e iOS.
-                </p>
-                <p>
-                    Com React Native, você escreve grande parte do código em JavaScript, mas ainda pode acessar APIs nativas para recursos como câmera, GPS e notificações. Isso torna o desenvolvimento de aplicativos móveis mais acessível para desenvolvedores web.
-                </p>
-                <h4>Exemplo de Código:</h4>
-                <pre><code>
-import React from 'react';
-import { Text, View } from 'react-native';
-
-function App() {
-    return (
-        <View>
-            <Text>Hello, React Native!</Text>
-        </View>
-    );
-}
-                </code></pre>
             </section>
 
             <section id="comparison">
@@ -110,6 +65,8 @@ function App() {
                     </tbody>
                 </table>
             </section>
+
+            <button id="scrollTopBtn">↑ Topo</button>
         </div>
     </main>
 
