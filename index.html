@@ -26,6 +26,7 @@
                 </li>
                 <li><a href="#react">React</a></li>
                 <li><a href="#react-native">React Native</a></li>
+                <li><button id="toggleTheme">Dark Mode</button></li>
             </ul>
         </div>
     </nav>
@@ -45,6 +46,16 @@
                 <p>
                     Um dos principais conceitos do React é o "virtual DOM", que permite atualizações eficientes da interface de usuário. Com o React, você pode construir aplicativos dinâmicos, onde partes da página podem ser atualizadas de forma independente, sem recarregar a página inteira.
                 </p>
+                <h4>Exemplo de Código:</h4>
+                <pre><code>
+function App() {
+    return (
+        <div>
+            <h1>Hello, React!</h1>
+        </div>
+    );
+}
+                </code></pre>
             </section>
 
             <section id="react-native">
@@ -55,6 +66,49 @@
                 <p>
                     Com React Native, você escreve grande parte do código em JavaScript, mas ainda pode acessar APIs nativas para recursos como câmera, GPS e notificações. Isso torna o desenvolvimento de aplicativos móveis mais acessível para desenvolvedores web.
                 </p>
+                <h4>Exemplo de Código:</h4>
+                <pre><code>
+import React from 'react';
+import { Text, View } from 'react-native';
+
+function App() {
+    return (
+        <View>
+            <Text>Hello, React Native!</Text>
+        </View>
+    );
+}
+                </code></pre>
+            </section>
+
+            <section id="comparison">
+                <h3>Comparativo: React vs React Native</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aspecto</th>
+                            <th>React</th>
+                            <th>React Native</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plataforma</td>
+                            <td>Web</td>
+                            <td>iOS, Android</td>
+                        </tr>
+                        <tr>
+                            <td>Componentes Nativos</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Curva de Aprendizado</td>
+                            <td>Média</td>
+                            <td>Média</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>
     </main>
@@ -64,5 +118,7 @@
             <p>Trabalho de Web 2 - ADS 5° Período</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

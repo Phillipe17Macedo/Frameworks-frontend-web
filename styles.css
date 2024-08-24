@@ -5,6 +5,12 @@ body {
     background-color: #f0f2f5;
     color: #333;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #1f2937;
+    color: #ffffff;
 }
 
 .container {
@@ -53,10 +59,12 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -69,6 +77,21 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #9ca3af;
+}
+
+nav ul li button {
+    background-color: #4b5563;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #6b7280;
 }
 
 main {
@@ -85,6 +108,10 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+body.dark-mode section {
+    background-color: #374151;
+}
+
 section:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
@@ -99,11 +126,67 @@ h3 {
     animation: fadeInLeft 1.5s ease-in-out;
 }
 
+body.dark-mode h3 {
+    color: #ffffff;
+    border-color: #6b7280;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #1f2937;
+}
+
+body.dark-mode h4 {
+    color: #ffffff;
+}
+
 p {
     line-height: 1.8;
     color: #4b5563;
     font-size: 1.1em;
     margin: 20px 0;
+}
+
+body.dark-mode p {
+    color: #d1d5db;
+}
+
+pre {
+    background-color: #f3f4f6;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #1f2937;
+}
+
+body.dark-mode pre {
+    background-color: #4b5563;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark-mode th {
+    background-color: #374151;
+    color: #ffffff;
 }
 
 footer {
@@ -134,4 +217,31 @@ footer p {
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
